@@ -1,0 +1,36 @@
+{
+  "repo": "de-indie-feedback-analyst",
+  "kind": "employee",
+  "run_at": "2026-09-30T23:54:20+08:00",
+  "cases": 248,
+  "passed": 248,
+  "failed": 0,
+  "by_suite": {
+    "structure": {
+      "total": 68,
+      "failed": 0
+    },
+    "contract": {
+      "total": 29,
+      "failed": 0
+    },
+    "scenario": {
+      "total": 124,
+      "failed": 0
+    },
+    "script": {
+      "total": 6,
+      "failed": 0
+    },
+    "doc": {
+      "total": 3,
+      "failed": 0
+    },
+    "compliance": {
+      "total": 18,
+      "failed": 0
+    }
+  },
+  "skipped": [],
+  "failures": []
+}
