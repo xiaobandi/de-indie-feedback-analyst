@@ -1,0 +1,15 @@
+{
+  "name": "wf-indie-feedback-weekly",
+  "title": "周报生成",
+  "kind": "workflow",
+  "owner": "de-indie-feedback-analyst",
+  "complexity": "S",
+  "phase": "P1",
+  "one_liner": "本周新增/Top 需求/流失预警 → 决策表 → 推送",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}

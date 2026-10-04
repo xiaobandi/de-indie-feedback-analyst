@@ -1,60 +1,60 @@
 ---
-name: wf-indie-feedback-weekly
+name: wf-indie-feedback-aggregate
 description: >-
-  用户反馈聚合分析师 的「周报生成」工作流：本周新增/Top 需求/流失预警 → 决策表 → 推送。触发方式：定时（每周一）。
-  当用户要完成「周报生成」这件事、或触发了上述条件时使用。
+  用户反馈聚合分析师 的「多渠道反馈采集」工作流：邮件/应用商店/Discord/社群/问卷抓取 → 统一入库。触发方式：定时（每日）。
+  当用户要完成「多渠道反馈采集」这件事、或触发了上述条件时使用。
 license: Proprietary
+compatibility: >-
+  需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
+  跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。
 metadata:
   author: PLATFORM
   version: "1.0.0"
   standard: agent-skills/v1
+  library: agent-skills-library
   layer: L2-workflow
   owner: de_indie_feedback_analyst
-  complexity: S
+  repo: de-indie-feedback-analyst
+  visibility: private_to_employee
+  delivery: employee
+  complexity: M
   phase: P1
   source: library
 ---
 
-# 周报生成
+# 多渠道反馈采集
 
-> 归属：**用户反馈聚合分析师**（`de-indie-feedback-analyst`）　触发：定时（每周一）　
-> 复杂度 S　阶段 P1
+> 归属：**用户反馈聚合分析师**（`de-indie-feedback-analyst`）　触发：定时（每日）　
+> 复杂度 M　阶段 P1
 
 ## 一、这条工作流解决什么
 
-本周新增/Top 需求/流失预警 → 决策表 → 推送
+邮件/应用商店/Discord/社群/问卷抓取 → 统一入库
 
-**业务收益**：省 2h/周 ≈ ¥640/月
+**业务收益**：省 0.5h/日 ≈ ¥1200/月
 
 ## 二、调用的 SKILL（必填列，逐条锁定版本）
 
 | 技能名 | slug | 来源仓 | 版本 |
 |---|---|---|---|
-| `简报生成` | `brief-generator` | core | v1.0.0 |
+| `数据对接` | `data-ingest-adapter` | 本仓 | v1.0.0 |
 
 > 公共技能来自 `agent-skills-core@1.0.0`，本仓库只做外部依赖引用，
 > **不内联复制**其正文——这是三层仓库体系的硬规则，避免同一能力多份副本各自漂移。
 
 ## 三、执行步骤（每步四要素齐备）
 
-### 步骤 1：本周新增/Top 需求/流失预警
+### 步骤 1：邮件/应用商店/Discord/社群/问卷抓取
 
-- **做**：本周新增/Top 需求/流失预警
+- **做**：邮件/应用商店/Discord/社群/问卷抓取
 - **输入来源**：用户提供的原始材料（工作流第 1 步没有「上一步」）/ 本员工知识库 `kb/` / 连接器只读数据；三者皆空时必须停在 G1 闸门
 - **依据与结论**：把本步结论对应到具体输入项
 - **未决 · 待填**：缺数据处写 `<待填>` 并给出获取方式
 
-### 步骤 2：决策表
+### 步骤 2：统一入库
 
-- **做**：决策表
+- **做**：统一入库
 - **输入来源**：步骤 1 的产出 / 本员工知识库 `kb/` / 连接器只读数据
-- **依据与结论**：把本步结论对应到具体输入项
-- **未决 · 待填**：缺数据处写 `<待填>` 并给出获取方式
-
-### 步骤 3：推送
-
-- **做**：推送
-- **输入来源**：步骤 2 的产出 / 本员工知识库 `kb/` / 连接器只读数据
 - **依据与结论**：把本步结论对应到具体输入项
 - **未决 · 待填**：缺数据处写 `<待填>` 并给出获取方式
 

@@ -1,0 +1,15 @@
+{
+  "name": "wf-indie-feedback-tagging",
+  "title": "情绪与优先级打标",
+  "kind": "workflow",
+  "owner": "de-indie-feedback-analyst",
+  "complexity": "S",
+  "phase": "P1",
+  "one_liner": "情绪识别 → 需求强度打分 → 流失风险标记",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}

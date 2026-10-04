@@ -1,0 +1,15 @@
+{
+  "name": "demand-intensity-score",
+  "title": "需求强度打分",
+  "kind": "skill",
+  "owner": "de-indie-feedback-analyst",
+  "complexity": "S",
+  "phase": "P1",
+  "one_liner": "按频次×付费意愿×流失风险打分（主题簇 → 优先级分）",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}

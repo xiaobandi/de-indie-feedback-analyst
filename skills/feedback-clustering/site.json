@@ -1,0 +1,15 @@
+{
+  "name": "feedback-clustering",
+  "title": "反馈聚类",
+  "kind": "skill",
+  "owner": "de-indie-feedback-analyst",
+  "complexity": "S",
+  "phase": "P1",
+  "one_liner": "语义去重与主题聚类（反馈集 → 主题簇）",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}
