@@ -16,7 +16,7 @@ metadata:
   - GitHub
   - Coze扣子商店
   - Dify Marketplace
-  license: Proprietary
+  license: Apache-2.0
   version: 1.0.0
 spec:
   positioning: 把散落五个渠道的用户反馈变成每周一张决策表

@@ -3,7 +3,7 @@ name: demand-intensity-score
 description: >-
   需求强度打分：按频次×付费意愿×流失风险打分。当任务涉及主题簇的处理、且目标产出是优先级分时使用——
   即使没有直接说出「需求强度打分」这个词，只要意图吻合也应触发。
-license: Proprietary
+license: Apache-2.0
 compatibility: >-
   需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
   跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。

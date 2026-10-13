@@ -3,7 +3,7 @@ name: wf-indie-feedback-tagging
 description: >-
   用户反馈聚合分析师 的「情绪与优先级打标」工作流：情绪识别 → 需求强度打分 → 流失风险标记。触发方式：事件（聚类后）。
   当用户要完成「情绪与优先级打标」这件事、或触发了上述条件时使用。
-license: Proprietary
+license: Apache-2.0
 compatibility: >-
   需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
   跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。
